@@ -20,7 +20,7 @@ interface Props {
 export function Header({ period, setPeriod, periodLoading, onBack }: Props) {
 	return (
 		<header className="sticky top-0 z-50 border-b border-edge/50 bg-void/80 backdrop-blur-xl">
-			<div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+			<div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-4">
 				<div className="flex items-center gap-3">
 					{onBack && (
 						<button
