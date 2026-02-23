@@ -16,7 +16,8 @@
 		"lint:fix": "biome check --fix .",
 		"format": "biome format --fix .",
 		"worker:deploy": "cd worker && bunx wrangler deploy",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"deploy": "bun run build && gh-pages -d dist"
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.2.0",
@@ -31,6 +32,7 @@
 		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",
 		"@vitejs/plugin-react-swc": "^4.2.3",
+		"gh-pages": "^6.3.0",
 		"typescript": "~5.9.3",
 		"vite": "^7.3.1"
 	}
