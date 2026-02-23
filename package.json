@@ -1,0 +1,37 @@
+{
+	"name": "soundboard",
+	"private": true,
+	"version": "0.1.0",
+	"author": "edlrod",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/edlrod/soundboard"
+	},
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "biome check .",
+		"lint:fix": "biome check --fix .",
+		"format": "biome format --fix .",
+		"worker:deploy": "cd worker && bunx wrangler deploy",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "^4.2.0",
+		"@tanstack/react-query": "^5.90.21",
+		"react": "^19.2.4",
+		"react-dom": "^19.2.4",
+		"tailwindcss": "^4.2.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.4",
+		"@types/node": "^24.10.13",
+		"@types/react": "^19.2.14",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react-swc": "^4.2.3",
+		"typescript": "~5.9.3",
+		"vite": "^7.3.1"
+	}
+}
